@@ -5,11 +5,11 @@ if (window.sessionstorage) {
   var txtUsername = document.getElementById('username');
   var txtAnswer = document.getElementById('answer');
 
-  // CHECK TO SEE IF VALUES ARE IN SESSION STORAGE AND PUTS THEM IN VARIABLES, WRITTEN INTO THE CORRESPONDING INPUT'S VALUE PROPERTY
+  // CHECK TO SEE IF VALUES ARE IN SESSION STORAGE AND PUTS THEM IN VARIABLES, WRITTEN INTO THE CORRESPONDING INPUT'S VALUE PROPERTY 
   txtUsername.value = sessionStorage.getItem('username');
   txtAnswer.value = sessionStorage.getItem('answer');
 
-  // WHEN A NEW VALUE IS ENTERED INTO THE FORM FIELD IT IS SAVED IN LOCAL STORAGE. IT WILL BE SHOWN IF YOU RELOAD THE PAGE 
+  // WHEN A NEW VALUE IS ENTERED INTO THE FORM FIELD IT IS SAVED IN LOCAL STORAGE. IT WILL BE SHOWN IF YOU RELOAD THE PAGE
   txtUsername.addEventListener('input', function() {
     sessionStorage.setItem('username', txtUsername.value);
   }, false);
