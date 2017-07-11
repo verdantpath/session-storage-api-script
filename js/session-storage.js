@@ -9,7 +9,7 @@ if (window.sessionstorage) {
   txtUsername.value = sessionStorage.getItem('username');
   txtAnswer.value = sessionStorage.getItem('answer');
 
-  // WHEN A NEW VALUE IS ENTERED INTO THE FORM FIELD IT IS SAVED IN LOCAL STORAGE. IT WILL BE SHOWN IF YOU RELOAD THE PAGE
+  // WHEN A NEW VALUE IS ENTERED INTO THE FORM FIELD IT IS SAVED IN LOCAL STORAGE. IT WILL BE SHOWN IF YOU RELOAD THE PAGE 
   txtUsername.addEventListener('input', function() {
     sessionStorage.setItem('username', txtUsername.value);
   }, false);
