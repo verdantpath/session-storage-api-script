@@ -1,11 +1,11 @@
 // An if statement checks if the browser supports the storage API
 if (window.sessionstorage) {
 
-  // SET UP VARIABLES TO CAPTURE FORM INPUTS
+  // SET UP VARIABLES TO CAPTURE FORM INPUTS 
   var txtUsername = document.getElementById('username');
   var txtAnswer = document.getElementById('answer');
 
-  // CHECK TO SEE IF VALUES ARE IN SESSION STORAGE AND PUTS THEM IN VARIABLES, WRITTEN INTO THE CORRESPONDING INPUT'S VALUE PROPERTY 
+  // CHECK TO SEE IF VALUES ARE IN SESSION STORAGE AND PUTS THEM IN VARIABLES, WRITTEN INTO THE CORRESPONDING INPUT'S VALUE PROPERTY
   txtUsername.value = sessionStorage.getItem('username');
   txtAnswer.value = sessionStorage.getItem('answer');
 
